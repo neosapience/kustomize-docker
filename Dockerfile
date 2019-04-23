@@ -2,7 +2,7 @@ FROM alpine:3.8
 ENV KUSTOMIZE_VER 2.0.0
 ENV KUBECTL_VER 1.13.3
 
-RUN apk --no-cache add curl gettext
+RUN apk --no-cache add curl gettext git
 
 RUN mkdir /working
 WORKDIR /working
